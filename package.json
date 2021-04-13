@@ -1,0 +1,19 @@
+{
+  "name": "@fostimus/hr-utils",
+  "version": "1.0.0",
+  "description": "Utilities for human readable strings.",
+  "main": "utils.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fostimus/utils.git"
+  },
+  "author": "Derek Foster <derekfoster94@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fostimus/utils/issues"
+  },
+  "homepage": "https://github.com/fostimus/utils#readme"
+}

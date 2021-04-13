@@ -24,3 +24,20 @@ function formatField(field) {
 function uppercaseString(str) {
   return str[0].toUpperCase() + str.slice(1);
 }
+
+/**
+ * [formatSlug given]
+ * @param  {[string]} title [human-readable title]
+ * @return {[string]}      [slug-formatted string]
+ */
+function formatSlug(title) {
+  slug = title.toLowerCase();
+
+  slug = slug.replace(" ", "-");
+
+  console.debug("Formatted Link:", slug);
+
+  return slug;
+}
+
+module.exports = { formatField, formatSlug };
