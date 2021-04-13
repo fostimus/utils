@@ -10,8 +10,6 @@ function formatField(field) {
 
   const groups = field.match(regex);
 
-  console.log(groups);
-
   // groups[0] is the overall match
   // groups[1, 2] are the capture groups
   if (groups[2] === undefined) {
@@ -31,11 +29,11 @@ function uppercaseString(str) {
  * @return {[string]}      [slug-formatted string]
  */
 function formatSlug(title) {
-  slug = title.toLowerCase();
-
-  slug = slug.replace(" ", "-");
-
-  console.debug("Formatted Link:", slug);
+  let slug = title
+    .replace(/[^\w\s]/gi, "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s/g, "-");
 
   return slug;
 }
